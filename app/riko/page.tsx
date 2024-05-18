@@ -8,8 +8,8 @@ export default function Riko() {
         <br></br>
         spasi
       </div>
-      <div className="p-10 bg-red-500"></div>
-      <div className="p-12 bg-slate-600">fndknfd</div>
+      <div className="flex-grow p-10 bg-red-500">riko</div>
+      <div className="p-12 bg-slate-600 w-full text-center">sdnjsn</div>
       <div className="p-20 bg-red-950"></div>
       <div className="p-10 bg-slate-50"></div>
     </>
