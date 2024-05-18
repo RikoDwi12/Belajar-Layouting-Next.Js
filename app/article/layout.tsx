@@ -1,5 +1,10 @@
 import React from "react";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "INI META DATA DI ARTIKEL",
+  description: "DISKRIPSI",
+};
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
@@ -9,7 +14,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <header className="p-4 bg-slate-800 w-full h-[72px] flex items-center justify-between">
             {/* Bagian kiri header */}
             <div className="flex items-center">
-              <h1 className="text-white text-right">Header</h1>
+              <h1 className="text-white text-left">Header</h1>
             </div>
 
             {/* Bagian kanan header */}
