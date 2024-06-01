@@ -143,14 +143,13 @@ export default function Page() {
             </p>
           </div>
           <div className="flex flex-row bg-green-600 justify-center items-center mt-[12px] gap-[16px]">
-            <div className="flex flex-col bg-red-600 w-[308px]">
-              <div className="bg-white w-full h-[160px] rounded-lg overflow-hidden">
+            <div className="flex flex-col bg-red-600 w-[308px] rounded-2xl object-cover overflow-hidden">
+              <div className="bg-white w-full h-[160px] ">
                 <Image
-                  src="/Rectangle.jpg"
+                  src="/artikel1.webp"
                   alt="Picture of the author"
                   width={308}
-                  height={160}
-                  className="w-[308px] h-[160px]"
+                  height={268}
                 />
               </div>
               <div className="bg-black">
@@ -165,17 +164,16 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col bg-yellow-400-600 w-[308px]">
-              <div className="bg-white w-full h-[160px] rounded-lg overflow-hidden">
+            <div className="flex flex-col w-[308px] object-cover overflow-hidden">
+              <div className="bg-white w-full h-[160px] flex rounded-2xl object-cover overflow-hidden">
                 <Image
-                  src="/Image.png"
+                  src="/artikel1.webp"
                   alt="Picture of the author"
-                  width={200}
-                  height={300}
-                  className="w-[308px] h-[160px]"
+                  width={308}
+                  height={268}
                 />
               </div>
-              <div className="bg-black">
+              <div className="bg-black ">
                 <p className="text-[20px] font-bold">
                   The Benefits of Music for People with Alzheimer’s
                 </p>
@@ -187,17 +185,13 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col bg-red-600 w-[308px] rounded-2xl overflow-hidden relative">
-              <div className="bg-white w-full h-[160px] rounded-2xl overflow-hidden relative">
+            <div className="flex flex-col bg-red w-[308px] object-cover ">
+              <div className="bg-white w-full h-[160px] flex rounded-2xl object-cover overflow-hidden">
                 <Image
-                  src="/foto2.png"
-                  alt="Picture"
-                  layout="fill"
-                  objectFit="center"
-                  objectPosition="center"
-                  // width={308}
-                  // height={160}
-                  className="rounded-2xl"
+                  src="/explore5.webp"
+                  alt="Picture of the author"
+                  width={308}
+                  height={268}
                 />
               </div>
               <div className="bg-black">
