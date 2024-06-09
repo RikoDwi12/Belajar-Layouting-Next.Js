@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
+      {/* Salmon Nutritionand Health Benefits */}
       <div className="bg-[url('/bgpp.svg')] flex flex-col bg-slate-600 w-full h-[308px]  md:h-[calc(100vh-72px)] p-10 justify-center items-center sm:p-4 md:p-6 lg:p-8 no-warp bg-cover">
         <div className="">
           <p className=" text-center font-bold text-[20px] md:text-[48px] ">
@@ -105,6 +106,8 @@ export default function Page() {
         date="April 19, 2023 Oleh blabla"
         desc="Rich in omega-3 fatty acids"
       /> */}
+
+      {/* Salmon Health Benefits */}
       <div className="flex flex-col bg-white w-full px-[16px] md:px-[162px] pt-[24px] md:pt-[80px] pb-[36px]">
         <div className="">
           <p className="text-[20px] md:text-[36px] font-bold text-black mb-[4px] md:mb-[16px]">
@@ -132,12 +135,19 @@ export default function Page() {
           </button>
         </div>
         <div className="flex flex-col  mt-[24px] md:mt-[40px] mb-[12px] md:mb-[24px]">
+          {/* You might also like */}
           <div className="bg-white-600 ">
             <p className="text-[20px] md:text-[36px] text-black font-bold text-proximanova">
               You might also like
             </p>
           </div>
-          <div className="flex flex-row  justify-center items-center mt-[12px] gap-[8px] md:gap-[16px] ">
+          <div className="flex flex-row justify-between items-center mt-[12px] gap-[8px] md:gap-[16px] ">
+            <Card
+              date="April, 19, 2023"
+              desc="Salmon is one of the mast ini desc"
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+            />
             <Card
               date="April, 19, 2023"
               desc="Salmon is one of the mast ini desc"

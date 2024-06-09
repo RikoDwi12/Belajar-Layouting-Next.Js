@@ -5,17 +5,20 @@ interface CardProps {
   tittle: string;
   desc: string;
   imgUrl: string;
+  className?: string;
 }
 export default function Card(data: CardProps) {
   return (
-    <div className="flex flex-col w-[128px] md:w-[308px] object-cover overflow-hidden">
+    <div
+      className={`${data.className} flex flex-col  object-cover overflow-hidden`}
+    >
       <div className="bg-white w-full h-[92px] md:h-[160px] flex rounded-2xl  overflow-hidden">
         <Image
           src={data.imgUrl}
           alt="Picture of the author"
           width={308}
-          height={268}
-          className="object-cover"
+          height={160}
+          className="object-cover w-full h-full"
         />
       </div>
       <div className=" mt-[8px] md:mt-[16px] mb-[4px] md:mb-[8px]">
