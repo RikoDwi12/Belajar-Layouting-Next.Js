@@ -1,6 +1,6 @@
 import Card from "@/components/Card";
 import React from "react";
-
+import "../globals.css";
 export default function page() {
   return (
     <>
@@ -15,57 +15,116 @@ export default function page() {
           View All
         </a>
       </div>
-      <div className="bg-red-600 flex flex-row">
-        <div className="bg-green-500  ">
+      <div className="bg-white flex flex-row">
+        <div className="bg-white">
           <div className="pl-[162px] lg:block hidden">
             {/* <!-- div border pp tnc --> */}
-            <div className="bg-fuchsia-600 flex flex-col w-[308px] h-[348px] justify-center px-[24px] shadow-lg rounded-2xl object-cover overflow-hidden gap-[12px]">
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
+            <div className="bg-white flex flex-col w-[308px] h-[348px] justify-center px-[24px] shadow-lg rounded-2xl object-cover overflow-hidden gap-[12px] mr-[24px] mt-[24px] border-[#F9F9F9]">
+              <a
+                href="/pp"
+                className="text-black text-[20px] font-extrabold cursor-pointer"
+              >
+                Explore Topic
+              </a>
+              <a
+                href="/tnc"
+                className="text-black text-[16px] font-extrabold cursor-pointer"
+              >
+                Disease
+              </a>
+              <a
+                href="/pp"
+                className="text-[#9B9B9B] text-[16px] cursor-pointer"
+              >
+                Food & Diet
               </a>
               <hr />
               <a
-                href="/tnc"
-                className="text-black font-extrabold cursor-pointer"
+                href="/pp"
+                className="text-[#9B9B9B] text-[16px] cursor-pointer"
               >
-                Terms & Conditions
-              </a>
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
+                Vitamins & Supplement
               </a>
               <hr />
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
+              <a
+                href="/pp"
+                className="text-[#9B9B9B] text-[16px] cursor-pointer"
+              >
+                Aging
               </a>
               <hr />
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
+              <a
+                href="/pp"
+                className="text-[#9B9B9B] text-[16px] cursor-pointer"
+              >
+                Collagen
               </a>
               <hr />
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
+              <a
+                href="/pp"
+                className="text-[#9B9B9B] text-[16px] cursor-pointer"
+              >
+                Biological Age
               </a>
-              <hr />
-              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
-                Privacy Policy
-              </a>
-              <hr />
-              {/* <p className="text-black font-extrabold cursor-pointer">
-              Terms & Conditions
-            </p> */}
+            </div>
+            <div className="bg-white w-[308px] h-[112px] mt-[16px] object-cover overflow-hidden rounded-2xl border-[#F9F9F9] shadow-lg">
+              <div className=" flex flex-col gap-[16px] px-[24px] ">
+                <div className=" text-[20px] text-black font-extrabold pt-2">
+                  Sort
+                </div>
+                <button className="bg-white border-2 border-[#F9F9F9] text-black flex items-center justify-between rounded-lg p-2 px-4">
+                  <span className="text-[14px]">Newest Article</span>
+                  <svg
+                    className="h-5 w-5 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div className="bg-gray-600 w-3/5 flex flex-col">
-          <div className="bg-green-900 text-[36px] font-bold text-black">
+        <div className="bg-white w-auto flex flex-col">
+          <div className="bg-white text-[36px] font-bold text-black mt-[24px]">
             Article
           </div>
-          <div className="bg-blue-700 flex flex-row gap-[8px]">
+          <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card
               date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
+              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
               tittle="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
+              className="w-[308px] gap-2"
+            />
+            <Card
+              date="April, 19, 2023"
+              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+              className="w-[308px]"
+            />
+            <Card
+              date="April, 19, 2023"
+              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+              className="w-[308px]"
+            />
+            <Card
+              date="April, 19, 2023"
+              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+              className="w-[308px]"
             />
             <Card
               date="April, 19, 2023"
@@ -80,7 +139,23 @@ export default function page() {
               imgUrl="/artikel1.webp"
             />
           </div>
-          <div className="bg-purple-900">Artikel</div>
+          <div className="bg-white my-[16px] flex flex-row gap-[8px] mb-[56px]">
+            <button className="w-[32px] h-[32px] bg-black text-white  rounded-full flex items-center justify-center">
+              1
+            </button>
+            <button className="w-[32px] h-[32px] bg-[#F1F1F1] text-black  rounded-full flex items-center justify-center">
+              2
+            </button>
+            <button className="w-[32px] h-[32px] bg-[#F1F1F1] text-black  rounded-full flex items-center justify-center">
+              3
+            </button>
+            <button className="w-[32px] h-[32px] bg-[#F1F1F1] text-black  rounded-full flex items-center justify-center">
+              4
+            </button>
+            <button className="w-[32px] h-[32px] bg-[#F1F1F1] text-black  rounded-full flex items-center justify-center">
+              5
+            </button>
+          </div>
         </div>
       </div>
       {/* <div className="bg-yellow-500">1</div> */}

@@ -61,7 +61,7 @@ export default function Page() {
             Terms & Conditions
           </div>
           <div className="">
-            <p className="text-[16px] lg:text-[24px] font-extrabold">
+            <p className="text-[16px] lg:text-[24px] font-extrabold ">
               Title with one Line
             </p>
             <p className="text-[12px] lg:text-[16px]">

@@ -21,10 +21,10 @@ export default function Card(data: CardProps) {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className=" mt-[8px] md:mt-[16px] mb-[4px] md:mb-[8px]">
+      <div className=" ">
         <p className="text-black text-[10px] md:text-[14px]">{data.date}</p>
       </div>
-      <div className=" mb-[8px]">
+      <div className=" ">
         <p className="text-black text-[16px] md:text-[20px] font-bold">
           {data.tittle}
         </p>
