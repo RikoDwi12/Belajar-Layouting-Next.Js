@@ -1,54 +1,89 @@
-export default function Page() {
+import Card from "@/components/Card";
+import React from "react";
+
+export default function page() {
   return (
     <>
-      <div className="bg-red-600 flex flex-row gap-40 pb-[10px]">
-        <div className="bg-green-600 mb-[8px] mt-[10px]">test</div>
-        <div className="bg-white pb-[8px]">test</div>
-        <div className="bg-yellow-500 no-warp">
-          sssssssssssssssstestssssssssssssssssssssssssssssss
-          ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-          ssssssssssssssssssssssssssssssssssssssssssssss
+      <div className="bg-white  text-black hidden lg:flex mx-auto px-4 lg:px-[64px] pb-[24px] gap-2 ">
+        <nav className="breadcrumb text-disabled pt-6">
+          <a href="/home" className="text-[#9B9B9B]">
+            Home
+          </a>
+          <span className="separator"> {">"} </span>
+        </nav>
+        <a className="active text-disabled pt-6 text-[#9B9B9B]" href="/pp">
+          View All
+        </a>
+      </div>
+      <div className="bg-red-600 flex flex-row">
+        <div className="bg-green-500  ">
+          <div className="pl-[162px] lg:block hidden">
+            {/* <!-- div border pp tnc --> */}
+            <div className="bg-fuchsia-600 flex flex-col w-[308px] h-[348px] justify-center px-[24px] shadow-lg rounded-2xl object-cover overflow-hidden gap-[12px]">
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              <a
+                href="/tnc"
+                className="text-black font-extrabold cursor-pointer"
+              >
+                Terms & Conditions
+              </a>
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              <a href="/pp" className="text-[#9B9B9B] cursor-pointer">
+                Privacy Policy
+              </a>
+              <hr />
+              {/* <p className="text-black font-extrabold cursor-pointer">
+              Terms & Conditions
+            </p> */}
+            </div>
+          </div>
+        </div>
+        <div className="bg-gray-600 w-3/5 flex flex-col">
+          <div className="bg-green-900 text-[36px] font-bold text-black">
+            Article
+          </div>
+          <div className="bg-blue-700 flex flex-row gap-[8px]">
+            <Card
+              date="April, 19, 2023"
+              desc="Salmon is one of the mast ini desc"
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+            />
+            <Card
+              date="April, 19, 2023"
+              desc="Salmon is one of the mast ini desc"
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+            />
+            <Card
+              date="April, 19, 2023"
+              desc="Salmon is one of the mast ini desc"
+              tittle="ini tittle ansdasdad"
+              imgUrl="/artikel1.webp"
+            />
+          </div>
+          <div className="bg-purple-900">Artikel</div>
         </div>
       </div>
-      <div className="flex flex-nowrap bg-gray-200 p-4 gap-[4px] pb-[10px]">
-        <div className="bg-red-500 w-32 h-32">
-          Item 111111111111111111111111
-        </div>
-        <div className="bg-green-500 w-32 h-32">Item 2</div>
-        <div className="bg-blue-500 w-32 h-32">Item 3</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div>item 5</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-      </div>
-
-      <div className="flex flex-wrap bg-gray-200 p-4">
-        <div className="bg-red-500 h-32 flex-shrink-0 w-auto">
-          Item 11111111111111111111111111111111111111
-        </div>
-        <div className="bg-green-500 w-32 h-32">Item 2</div>
-        <div className="bg-blue-500 w-32 h-32">Item 3</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-        <div className="bg-yellow-500 w-32 h-32">Item 4</div>
-      </div>
-
-      <div className="">Ini Halaman Home</div>
+      {/* <div className="bg-yellow-500">1</div> */}
     </>
   );
 }

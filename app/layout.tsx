@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
-  title: "INI BAGIAN META DATA TITTLE",
+  title: "Longalongo",
 };
 
 export default function RootLayout({

@@ -1,17 +1,14 @@
+import Button from "@/components/Button";
+
 export default function Riko() {
   return (
     <>
-      <div className="p-10 bg-slate-300">
-        <h1 className="text-2xl">afkda</h1>afkjdnfsdajnf
-        <br></br>
-        adfnskdnfk
-        <br></br>
-        spasi
+      <div className="p-10 bg-slate-50 text-black">
+        <Button
+          title="Riko"
+          className="bg-red-600 text-black font-bold w-full rounded-full focus:bg-slate-300 active:bg-slate-500"
+        />
       </div>
-      <div className="flex-grow p-10 bg-red-500">riko</div>
-      <div className="p-12 bg-slate-600 w-full text-center">sdnjsn</div>
-      <div className="p-20 bg-red-950"></div>
-      <div className="p-10 bg-slate-50"></div>
     </>
   );
 }
