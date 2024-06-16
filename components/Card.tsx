@@ -12,7 +12,7 @@ export default function Card(data: CardProps) {
     <div
       className={`${data.className} flex flex-col  object-cover overflow-hidden`}
     >
-      <div className="bg-white w-full h-[92px] md:h-[160px] flex rounded-2xl  overflow-hidden">
+      <div className="bg-white w-full h-[92px] lg:h-[160px] flex rounded-2xl  overflow-hidden">
         <Image
           src={data.imgUrl}
           alt="Picture of the author"
@@ -22,15 +22,15 @@ export default function Card(data: CardProps) {
         />
       </div>
       <div className=" ">
-        <p className="text-black text-[10px] md:text-[14px]">{data.date}</p>
+        <p className="text-black text-[10px] lg:text-[14px]">{data.date}</p>
       </div>
       <div className=" ">
-        <p className="text-black text-[16px] md:text-[20px] font-bold">
+        <p className="text-black text-[16px] lg:text-[20px] font-bold">
           {data.tittle}
         </p>
       </div>
       <div className="">
-        <p className="text-black text-[12px] md:text-[16px]">{data.desc}</p>
+        <p className="text-black text-[12px] lg:text-[16px]">{data.desc}</p>
       </div>
     </div>
   );

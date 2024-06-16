@@ -1,9 +1,12 @@
+"use client";
+
 import Card from "@/components/Card";
 import React from "react";
 import "../globals.css";
 export default function page() {
   return (
     <>
+      {/* <!-- div nav --> */}
       <div className="bg-white  text-black hidden lg:flex mx-auto px-4 lg:px-[64px] pb-[24px] gap-2 ">
         <nav className="breadcrumb text-disabled pt-6">
           <a href="/home" className="text-[#9B9B9B]">
@@ -15,8 +18,10 @@ export default function page() {
           View All
         </a>
       </div>
-      <div className="bg-white flex flex-row">
+      {/* <!-- wrap pembungkus 2 content --> */}
+      <div className="bg-white flex flex-col lg:flex-row">
         <div className="bg-white">
+          {/* <!-- div border pp tnc --> */}
           <div className="pl-[162px] lg:block hidden">
             {/* <!-- div border pp tnc --> */}
             <div className="bg-white flex flex-col w-[308px] h-[348px] justify-center px-[24px] shadow-lg rounded-2xl object-cover overflow-hidden gap-[12px] mr-[24px] mt-[24px] border-[#F9F9F9]">
@@ -92,52 +97,63 @@ export default function page() {
               </div>
             </div>
           </div>
+          {/* <!-- Mobile view --> */}
+          <div className="lg:hidden flex flex-row items-center gap-[12px] pl-[16px] py-[16px]">
+            <button
+              type="button"
+              onClick={() => {
+                window.location.href = "/pp";
+              }}
+              className="bg-[#F1F1F1] text-[#9B9B9B] font-bold py-2 px-4 rounded-full "
+            >
+              Privacy Policy
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                window.location.href = "/tnc";
+              }}
+              className="bg-[#2C2C2C] text-white font-bold py-2 px-4 rounded-full  "
+            >
+              Terms & Conditions
+            </button>
+          </div>
         </div>
-        <div className="bg-white w-auto flex flex-col">
-          <div className="bg-white text-[36px] font-bold text-black mt-[24px]">
+        <div className="bg-red-600 w-auto flex flex-col ">
+          <div className="bg-purple-300 text-[36px] font-bold text-black mt-[24px]">
             Article
           </div>
-          <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-yellow-300 grid grid-cols-1 lg:grid-cols-2 gap-[8px]">
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
               tittle="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
-              className="w-[308px] gap-2"
+              className="w-[84px] lg:w-[250px] gap-2"
             />
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
               tittle="ini tittle ansdasdad"
-              imgUrl="/artikel1.webp"
-              className="w-[308px]"
-            />
-            <Card
-              date="April, 19, 2023"
-              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
-              tittle="ini tittle ansdasdad"
-              imgUrl="/artikel1.webp"
-              className="w-[308px]"
+              imgUrl="/ekplor.webp"
+              className="w-[84px] lg:w-[250px]"
             />
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
               tittle="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
-              className="w-[308px]"
+              className="w-[84px] lg:w-[250px]"
             />
             <Card
               date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
+              desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
               tittle="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
+              className="w-[84px] lg:w-[250px]"
             />
-            <Card
-              date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
-              imgUrl="/artikel1.webp"
-            />
+            <div className="bg-yellow-500">1</div>
+            <div className="bg-purple-700">1</div>
           </div>
           <div className="bg-white my-[16px] flex flex-row gap-[8px] mb-[56px]">
             <button className="w-[32px] h-[32px] bg-black text-white  rounded-full flex items-center justify-center">

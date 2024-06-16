@@ -21,12 +21,21 @@ export default function Header() {
     }
   };
 
-  const [lang, setLang] = React.useState<string>("ID");
+  // const [lang, setLang] = React.useState<string>("ID");
+  // const changeLang = () => {
+  //   if (lang === "ID") {
+  //     setLang("EN");
+  //   } else {
+  //     setLang("ID");
+  //   }
+  // };
+
+  const [lang, setLang] = React.useState<boolean>(false);
   const changeLang = () => {
-    if (lang === "ID") {
-      setLang("EN");
+    if (lang === false) {
+      setLang(true);
     } else {
-      setLang("ID");
+      setLang(false);
     }
   };
 
@@ -51,11 +60,6 @@ export default function Header() {
             <p>Product</p>
           </div>
           <div className="text-nowrap text-[16px]">
-            {/* <Link
-              href="http://wa.me/6287887997888"
-              target="_blank"
-              className="hidden lg:flex text-white cursor-pointer"
-            ></Link> */}
             <Link
               href="http://wa.me/6287887997888"
               target="_blank"
@@ -71,25 +75,27 @@ export default function Header() {
           </div>
           <div className=" text-nowrap flex flex-row gap-[8px] items-center justify-center">
             <div className=" text-nowrap">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 7.62367C0.0312451 7.36669 0.0574233 7.10888 0.0941574 6.85275C0.296831 5.37359 0.918783 3.98387 1.8861 2.84873C3.07046 1.44533 4.56262 0.52836 6.36175 0.173595C8.86684 -0.321722 11.1363 0.242177 13.1098 1.87969C14.5268 3.0549 15.4152 4.57218 15.7914 6.37521C15.8999 6.89678 15.9308 7.43358 16.0025 7.99494H15.7454H0.204782C0.137225 7.99494 0.0700903 7.99833 0.00253338 8.00002L0 7.62367Z"
-                  fill="#ED1C24"
-                />
-                <path
-                  d="M16 8.37636C15.9688 8.63333 15.9426 8.89115 15.9058 9.14727C15.7033 10.6265 15.0812 12.0163 14.1135 13.1513C12.9312 14.5551 11.4374 15.4717 9.63783 15.8269C7.13105 16.3217 4.86198 15.7578 2.88848 14.1208C1.47316 12.9451 0.584789 11.4304 0.211115 9.62481C0.102602 9.10324 0.0717792 8.56644 0 8.00508H0.257138H15.7978C15.8653 8.00508 15.9324 8.00169 16 8V8.37636Z"
-                  fill="white"
-                />
-              </svg>
+              <Image
+                src="/indo.png"
+                alt="logo"
+                width={16}
+                height={16}
+                className="w-[16px] h-[16px] "
+              />
             </div>
-            <div onClick={() => changeLang()} className=" text-nowrap">
-              {lang === "ID" ? "Indonesia" : "English"}
+            <div className=" text-nowrap">Indonesia</div>
+            {/* <div onClick={() => changeLang()} className=" text-nowrap">
+              {lang === true ? "English" : "Indonesia"}
+            </div> */}
+            <div className="">
+              <button onClick={() => changeLang()} className="no-warp">
+                {lang === true ? (
+                  <DownIcon className="fill-white" />
+                ) : (
+                  <DownIcon />
+                )}
+              </button>
+              {/* <DownIcon /> */}
             </div>
           </div>
           <div className=" rounded-full object-cover overflow-hidden w-[40px] h-[40px] ">
@@ -163,6 +169,19 @@ export default function Header() {
               <p className="text-white p-[24px] text-[16px]">Contact Us</p>
             </div>
           </div>
+        </div>
+      )}
+
+      {lang === true && (
+        <div className="fixed bg-[#2C2C2C] w-[125px] right-[120px] top-[54px] h-[70px] hidden lg:flex justify-start items-center gap-[8px]">
+          <Image
+            src="/indo.png"
+            alt="logo"
+            width={16}
+            height={16}
+            className="w-[16px] h-[16px] ml-2"
+          />
+          <div className="flex justify-center">English</div>
         </div>
       )}
     </>
