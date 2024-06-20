@@ -39,6 +39,15 @@ export default function Header() {
     }
   };
 
+  const [menu, setMenu] = React.useState<boolean>(false);
+  const changeMenu = () => {
+    if (menu === false) {
+      setMenu(true);
+    } else {
+      setMenu(false);
+    }
+  };
+
   return (
     <>
       <header className="bg-[#2C2C2C] px-[64px] h-[72px]  justify-between lg:flex hidden fixed w-full">
@@ -148,12 +157,18 @@ export default function Header() {
             </button>
           </div>
           <div className=" flex object-cover ">
-            <button>
-              <DownIcon />
+            <button onClick={() => changeLang()} className="no-warp">
+              {lang === true ? (
+                <DownIcon className="fill-white" />
+              ) : (
+                <DownIcon />
+              )}
             </button>
+            {/* <DownIcon /> */}
           </div>
         </div>
       </header>
+
       {sidebarOpen === true && (
         <div className="fixed bg-[#2C2C2C] sm:w-1/3 left-0 top-[54px] h-full lg:hidden  ">
           <div className="bg-[#2C2C2C] flex flex-col ">
@@ -175,13 +190,25 @@ export default function Header() {
       {lang === true && (
         <div className="fixed bg-[#2C2C2C] w-[125px] right-[120px] top-[54px] h-[70px] hidden lg:flex justify-start items-center gap-[8px]">
           <Image
-            src="/indo.png"
+            src="/englosh.svg"
             alt="logo"
             width={16}
             height={16}
             className="w-[16px] h-[16px] ml-2"
           />
           <div className="flex justify-center">English</div>
+        </div>
+      )}
+
+      {lang === true && (
+        <div className="fixed flex pl-3 bg-[#2C2C2C] w-[70px] right-[5px] top-[54px] h-[30px] lg:hidden">
+          <Image
+            src="/englosh.svg"
+            alt="logo"
+            width={16}
+            height={16}
+            className="w-[16px] h-[16px] ml-2"
+          />
         </div>
       )}
     </>
