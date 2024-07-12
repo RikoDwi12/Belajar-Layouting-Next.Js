@@ -1,6 +1,5 @@
 // import Article from "@/components/Article";
 import Card from "@/components/Card";
-import TelegramIcon from "@/components/icons/telegram";
 import Image from "next/image";
 
 export default function Page() {
@@ -16,7 +15,6 @@ export default function Page() {
             sdisjdisjiajsia999
           </p>
           <div className="flex  justify-center item-center gap-[4px] md:gap-[8px] mt-[9px] md:mt-[24px]">
-            <TelegramIcon className="cursor-pointer" />
             <button className="bg-blue-600 rounded-full">
               <svg
                 width="22"
@@ -131,25 +129,19 @@ export default function Page() {
             <Card
               date="April, 19, 2023"
               desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="ini title ansdasdad"
               imgUrl="/artikel1.webp"
             />
             <Card
               date="April, 19, 2023"
               desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="ini title ansdasdad"
               imgUrl="/artikel1.webp"
             />
             <Card
               date="April, 19, 2023"
               desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
-              imgUrl="/artikel1.webp"
-            />
-            <Card
-              date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="ini title ansdasdad"
               imgUrl="/artikel1.webp"
             />
           </div>

@@ -50,7 +50,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#2C2C2C] px-[64px] h-[72px]  justify-between lg:flex hidden fixed w-full">
+      <header className="bg-[#2C2C2C] px-[64px] h-[72px]  justify-between lg:flex hidden fixed w-full z-50">
         <div className="flex items-center">
           <Link href={"/home"}>
             <LongeAgeIcon />
@@ -119,7 +119,7 @@ export default function Header() {
         </div>
       </header>
 
-      <header className="bg-[#2C2C2C] flex lg:hidden fixed w-full h-[54px]">
+      <header className="bg-[#2C2C2C]  flex lg:hidden fixed w-full h-[54px] z-50">
         <div className="flex flex-grow  px-[8px] justify-between items-center gap-4">
           <div className="">
             <button onClick={() => sideBarClick()} className="no-warp">
@@ -170,7 +170,7 @@ export default function Header() {
       </header>
 
       {sidebarOpen === true && (
-        <div className="fixed bg-[#2C2C2C] sm:w-1/3 left-0 top-[54px] h-full lg:hidden  ">
+        <div className="fixed bg-[#2C2C2C] sm:w-1/3 left-0 top-[54px] h-full lg:hidden z-50 ">
           <div className="bg-[#2C2C2C] flex flex-col ">
             <div className="p-[20px] gap-[20px] ">
               <LongeAgeIcon />

@@ -119,36 +119,36 @@ export default function page() {
             </button>
           </div>
         </div>
-        <div className="bg-red-600 w-auto flex flex-col ">
-          <div className="bg-purple-300 text-[36px] font-bold text-black mt-[24px]">
+        <div className=" w-auto flex flex-col ">
+          <div className=" text-[36px] font-bold text-black mt-[24px]">
             Article
           </div>
-          <div className="bg-yellow-300 grid grid-cols-1 lg:grid-cols-2 gap-[8px]">
+          <div className=" grid grid-cols-1 lg:grid-cols-2 gap-[8px]">
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
-              tittle="ini tittle ansdasdad"
+              title="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
               className="w-[84px] lg:w-[250px] gap-2"
             />
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
-              tittle="ini tittle ansdasdad"
+              title="ini tittle ansdasdad"
               imgUrl="/ekplor.webp"
               className="w-[84px] lg:w-[250px]"
             />
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
-              tittle="ini tittle ansdasdad"
+              title="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
               className="w-[84px] lg:w-[250px]"
             />
             <Card
               date="April, 19, 2023"
               desc="Music therapy and other musical Activities may help reduce Alzheimer’s symptomps."
-              tittle="ini tittle ansdasdad"
+              title="ini tittle ansdasdad"
               imgUrl="/artikel1.webp"
               className="w-[84px] lg:w-[250px]"
             />

@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import ButtonInput from "@/components/ButtonInput";
 import Card from "@/components/Card";
 import Image from "next/image";
@@ -9,11 +10,11 @@ export default function page() {
     <>
       {/* INI DIV BG LONGEVITY */}
       <div className="bg-[url('/bgsm.png')]  md:bg-[url('/bg1.png')]  w-full h-[calc(100vh-72px)] bg-right-bottom sm:bg-bottom bg-cover">
-        <div className=" flex w-5/12 h-full items-center text-black pb-[150px] md:pb-[10px] ">
-          <div className=" mt-0 pl-[16px] md:pl-[64px]">
-            <p className="text-[20px] lg:text-[48px] font-bold text-nowrap">
+        <div className=" flex w-5/12 h-full items-center text-black flex-none pb-[150px] md:pb-[10px]">
+          <div className=" mt-0 pl-[16px] md:pl-[64px] ">
+            <h1 className="text-[20px] lg:text-[48px] font-bold text-nowrap">
               Longevity in Aging
-            </p>
+            </h1>
             <p className="text-[32px] lg:text-[56px] font-extrabold text-nowrap">
               LIVE MORE
             </p>
@@ -24,22 +25,18 @@ export default function page() {
             <p className="text-[10px] lg:text-[16px] mb-[8px]">
               Discover the secret to Lifelong & Youthful Body
             </p>
-            <div className=" bg-[#F1F1F1] rounded-full overflow-hidden w-full lg:w-3/5">
-              {/* <ButtonInput
-                title="Sign me"
-                isBtnLupIcon={false}
-                className="bg-[#F1F1F1] text-black  "
-              /> */}
+            <div className=" bg-[#F1F1F1] rounded-full overflow-hidden w-full lg:w-3/5 mb-[5px]">
               <input
-                type="email"
-                placeholder="Enter your email "
-                className="w-full h-8 lg:h-10 focus:outline-none bg-[#F1F1F1] "
+                type="text"
+                className="bg-[#F1F1F1] text-black text-[12px] rounded-full flex  focus:outline-none w-full p-2 gap-2 flex-none"
+                placeholder="Enter your email address"
               />
             </div>
             <div>
-              <button className="bg-[#F1F1F1] text-black text-[14px] mt-[16px] py-[4px] rounded-full  md:flex justify-center items-center text-nowrap w-1/4 ">
-                Sign Me
-              </button>
+              <Button
+                title="Sign me"
+                className="bg-[#2C2C2C] text-white font-bold  px-2 rounded-full flex-none "
+              />
             </div>
           </div>
         </div>
@@ -81,123 +78,92 @@ export default function page() {
           </div>
         </div> */}
         <div className="bg-white w-full  flex flex-col ">
-          {/*  RECENT UPDATE */}
-
-          <div className="bg-white mt-[80px]">
-            <p className="text-[20px] lg:text-[40px] font-bold text-black mb-[12px] lg:mb-[24px]">
+          {/*  RECENT UPDATE YANG BARU*/}
+          <div className=" mt-[80px]">
+            <h1 className="text-[20px] lg:text-[40px] font-bold text-black mb-[12px] lg:mb-[24px]">
               Recent Updates
-            </p>
+            </h1>
           </div>
-          <div className="bg-white flex flex-col  lg:flex-row gap-[24px]">
-            <div className="bg-white object-cover overflow-hidden rounded-2xl">
-              <Image
+          <div className=" flex flex-col lg:flex-row gap-[24px]">
+            <div className=" h-[280px] lg:h-auto w-full lg:w-1/2">
+              <img
                 src="/explore2.webp"
                 alt="Picture of the author"
-                width={466}
-                height={292}
-                className="w-full h-full"
+                className="w-full h-full rounded-2xl object-cover overflow-hidden "
               />
             </div>
-            <div className="bg-white flex flex-col gap-[16px]">
-              <div className="bg-white">
-                <p className="text-[10px] lg:text-[16px] text-black">
-                  May 8, 2023
-                </p>
-              </div>
-              <div className="bg-white">
-                <p className="text-[20px] lg:text-[36px] font-bold text-wrap text-black">
-                  The Benefits of Music for People with Alzheimer’s or Dementia
-                </p>
-              </div>
-              <div className="bg-white">
-                <p className="text-[14px] lg:text-[20px] text-black">
-                  Music therapy and other musical activities may help reduce
-                  Alzheimer’s symptoms.
-                </p>
-              </div>
+            <div className=" w-full lg:w-1/2 text-black">
+              <p className="text-[10px] lg:text-[16px]">May 8, 2023</p>
+              <h1 className="text-[20px] lg:text-[36px] font-bold">
+                The Benefits of Music for People with Alzheimer’s or Dementia
+              </h1>
+              <p className="text-[14px] lg:text-[20px]">
+                Music therapy and other musical activities may help reduce
+                Alzheimer’s symptoms.
+              </p>
             </div>
           </div>
-          {/* ini card */}
-
-          <div className="bg-white flex flex-row gap-[16px] justify-center items-center mt-[40px]  ">
+          <div className=" pt-[24px] flex flex-row gap-[16px] justify-between items-center ">
             <Card
               date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
-              imgUrl="/artikel1.webp"
-              className="w--[308px] h-full"
-            />
-            <Card
-              date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="Healt Start with the Mind"
+              desc="Mental and physical healt are linded closely interconnected"
               imgUrl="/artikel1.webp"
             />
             <Card
               date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="Healt Start with the Mind"
+              desc="Mental and physical healt are linded closely interconnected"
               imgUrl="/artikel1.webp"
             />
             <Card
               date="April, 19, 2023"
-              desc="Salmon is one of the mast ini desc"
-              tittle="ini tittle ansdasdad"
+              title="Healt Start with the Mind"
+              desc="Mental and physical healt are linded closely interconnected"
               imgUrl="/artikel1.webp"
             />
           </div>
         </div>
         {/* INI WHO WE ARE */}
-
-        <div className="bg-white w-full  flex flex-col-reverse lg:flex-row my-[80px]">
-          <div className="bg-white flex flex-col  justify-center ">
-            <div className="bg-white ">
-              <p className="text-[20px] lg:text-[36px] font-bold text-black">
-                Who We Are
-              </p>
+        <div className=" flex flex-col-reverse lg:flex-row my-[80px] ">
+          <div className=" w-full lg:w-1/2 flex flex-col justify-center items-start gap-2 text-black">
+            <div className=" text-[20px] lg:text-[36px] font-bold">
+              Who We Are
             </div>
-
-            {/* LongeAge was born from curiosity-driven exploration with the */}
-            <div className="bg-white mt-[16px] lg:mt-[24px] w-full lg:w-2/3 ">
-              <p className="text-[12px] lg:text-[16px] text-black">
-                LongeAge was born from curiosity-driven exploration with the
-                potential to delay aging and extend life span. We are a
-                longevity tech startup based in Indonesia with a transformative
-                platform of longevity and age that will serve as the scaffold
-                for everything from regenerative and genomic information to
-                biological test kits. We currently provide a website, multimedia
-                materials and articles in the field of health, wellness,
-                fitness, and happiness for entertainment and educational
-                purposes.
-              </p>
+            <hr />
+            <div className=" text-[12px] lg:text-[16px] ">
+              LongeAge was born from curiosity-driven exploration with the
+              potential to delay aging and extend life span. We are a longevity
+              tech startup based in Indonesia with a transformative platform of
+              longevity and age that will serve as the scaffold for everything
+              from regenerative and genomic information to biological test kits.
+              We currently provide a website, multimedia materials and articles
+              in the field of health, wellness, fitness, and happiness for
+              entertainment and educational purposes.
             </div>
           </div>
-
-          <div className="bg-white flex justify-center items-center  rounded-2xl object-cover overflow-hidden mb-[16px] lg:mb-0 ">
-            <Image
-              src="/explore2.webp"
+          <div className=" w-full h-[280px] lg:h-auto lg:w-1/2 mb-[16px] lg:mb-0">
+            <img
+              src="/home6.png"
               alt="Picture of the author"
-              width={466}
-              height={292}
-              className="w-full h-full"
+              className="w-full h-full rounded-2xl object-cover overflow-hidden "
             />
           </div>
         </div>
       </div>
+      {/* DIV OUR MISSION */}
 
-      {/* INI DIV OUR MISSION */}
-
-      <div className="bg-[url('/m2sm.png')] md:bg-[url('/svgsvg.svg')] w-full h-[720px] flex flex-col  pt-[361px] bg-left-top sm:bg-center bg-cover ">
-        <div className=" w-1/2 lg:w-full flex justify-center justify-items-start pl-[17px] lg:pl-[700px] pr-[130px] lg:pr-[200px]  text-wrap flex-col ">
-          <h1 className="text-[32px] md:text-[40px] lg:text-[46px] font-bold text-nowrap ">
+      <div className="bg-[url('/m2sm.png')] md:bg-[url('/svgsvg.svg')] w-full h-[720px] flex flex-col justify-end items-start bg-left-top sm:bg-center bg-cover ">
+        {/* <div className="bg-red-300 w-1/2 lg:w-full flex justify-center justify-items-start  text-wrap flex-col ">
+          <h1 className="text-[32px] md:text-[40px] lg:text-[46px] font-bold text-nowrap bg-red-600 w-full">
             Our Mission
           </h1>
           <hr className="bg-white" />
-          <p className="text-[16px] md:text-[18px] lg:text-[20px] text-wrap">
+          <p className="text-[16px] md:text-[18px] lg:text-[20px] text-wrap bg-cyan-400">
             We are committed to increase public awareness in maintaining and
             life spans
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="bg-white w-full  flex flex-col">
         <div className="bg-white flex flex-col gap-[42px] px-[16px] lg:px-[162px] mt-[80px]">

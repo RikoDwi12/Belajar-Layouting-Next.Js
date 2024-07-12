@@ -9,16 +9,13 @@ interface CardByopicProps {
 
 export default function ByTopicCard(data: CardByopicProps) {
   return (
-    <div className="bg-green-700 w-1/2 flex flex-row gap-2">
-      <div className="bg-red-700 w-1/3">
-        <img
-          src={data.imgUrl}
-          alt="gambar"
-          className="w-[84px] lg:w-full h-[84px] lg:h-[155px] rounded-2xl object-cover overflow-hidden"
-          style={{ aspectRatio: "466 / 292" }}
-        />
-      </div>
-      <div className="bg-gray-700 w-2/3 gap-[8px]">
+    <div className=" flex flex-row gap-2 mt-[24px]">
+      <img
+        src={data.imgUrl}
+        alt="gambar"
+        className="w-[172px] h-[148px] flex flex-none rounded-2xl object-cover overflow-hidden"
+      />
+      <div className="">
         <p className="text-[#9B9B9B] text-[10px] lg:text-[14px]">{data.date}</p>
         <p className="text-[16px] lg:text-[20px] text-black font-bold">
           {data.title}

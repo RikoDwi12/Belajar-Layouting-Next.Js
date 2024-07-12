@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["cyrillic"] });
 export const metadata: Metadata = {
   title: "Longalongo",
   icons: {
-    icon: "/favicon.ico",
+    icon: ["/favicon.ico"],
   },
 };
 
