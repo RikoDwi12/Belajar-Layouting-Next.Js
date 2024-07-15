@@ -23,13 +23,27 @@ const Page = () => {
     setProducts(updateProduct);
   };
 
+  const onEditeProduct = (id: any, data: any) => {
+    const updateProduct = products.map((prod) => {
+      if (prod.id == id) {
+        return { ...prod, ...data };
+      }
+      return prod;
+    });
+    setProducts(updateProduct);
+  };
+
   return (
     <>
       <div className="flex justify-center text-[32px] text-black font-bold">
         INI MERUPAKAN SHOWROOM PENJUALAN MOBIL
       </div>
       <ProductCreate onCreateProduct={onCreateProduct} />
-      <ProductList Products={products} onDeleteProduct={onDeleteProduct} />
+      <ProductList
+        Products={products}
+        onDeleteProduct={onDeleteProduct}
+        onEditeProduct={onEditeProduct}
+      />
     </>
   );
 };
