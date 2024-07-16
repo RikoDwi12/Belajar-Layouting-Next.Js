@@ -35,7 +35,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="flex justify-center text-[32px] text-black font-bold">
+      <div className="flex justify-center text-[18px] lg:text-[32px] text-black font-bold text-center">
         INI MERUPAKAN SHOWROOM PENJUALAN MOBIL
       </div>
       <ProductCreate onCreateProduct={onCreateProduct} />
